@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class=" bg-gray-900  flex flex-col items-center gap-2 mt-52">
+    <h1 class=" text-yellow-200 text-2xl font-bold">Calculator</h1>
+    <div class="hidden bg-yellow-200 w-96 h-96 lg:flex lg:flex-col items-center gap-14 rounded-lg">
+        <div class="bg-gray-900 w-60 h-10 mx-14 mt-2 flex items-center gap-2 px-20 rounded-lg">
+            <h1 class="text-white text-center py-2">Result:</h1>
+            <h1 id="result" class="text-white">0</h1>
+        </div>
+        <div class="font-bold text-gray-700">
+        <label for="firstNum">Enter First Number:</label> <input type="text" class="p-1" id="firstNum"><br><br>
+        <label for="secondNum">Enter First Number:</label> <input type="text" class="p-1" id="secondNum"><br><br>
+        <label for="operation">Operation:</label><select name="" id="operation" class="mx-2 px-2 py-2">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        </div>
+        <div class="flex gap-5 text-center hover:cursor-pointer">
+            <div class="bg-gray-900 w-24 h-10 text-white text-2xl font-bold hover:bg-green-600 rounded-lg">
+                <button class="py-1" id="resultButton">Result</button>
+            </div>
+            <div class="bg-red-700 w-24 h-10 text-white text-2xl font-bold hover:bg-green-600 rounded-lg">
+                <button class="py-1" id="resetButton">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
